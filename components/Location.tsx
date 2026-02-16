@@ -52,14 +52,17 @@ const Location: React.FC = () => {
                 </div>
             </div>
 
-            {/* Static Map Image / Storefront Vibe */}
+            {/* Storefront Image */}
             <div className="h-[400px] md:h-auto bg-[#111] relative overflow-hidden">
                  <img 
-                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop" 
-                    alt="Interior da Loja" 
-                    className="w-full h-full object-cover opacity-60 hover:opacity-80 transition-opacity duration-700"
+                    src="/images/store-front.jpg" 
+                    alt="Fachada Postura Modas" 
+                    className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-700"
+                    onError={(e) => {
+                        e.currentTarget.src = "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070&auto=format&fit=crop";
+                    }}
                 />
-                <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
             </div>
 
       </div>

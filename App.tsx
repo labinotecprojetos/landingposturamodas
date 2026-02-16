@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Brands from './components/Brands';
 import Features from './components/Features';
 import Gallery from './components/Collection';
+import Showcase from './components/Showcase';
 import Location from './components/Location';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Brands />
         <Features />
         <Gallery />
+        <Showcase />
         <Testimonials />
         <Location />
         <SEO />

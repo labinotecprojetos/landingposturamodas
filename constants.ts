@@ -31,6 +31,7 @@ export const NAV_LINKS = [
   { name: 'Conceito', href: '#concept' },
   { name: 'Marcas', href: '#brands' },
   { name: 'Estilo', href: '#gallery' },
+  { name: 'Mostruário', href: '#showcase' },
   { name: 'Loja Física', href: '#location' },
 ];
 
@@ -64,32 +65,41 @@ export const FEATURES: Feature[] = [
 export const GALLERY_ITEMS: Product[] = [
   {
     id: 1,
-    name: "Streetwear Luxury",
+    name: "Knit Premium",
     price: "",
-    category: "Oversize & Atitude",
-    image: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=1974&auto=format&fit=crop", 
+    category: "Sofisticação",
+    image: "/images/gallery-1.jpg", 
   },
   {
     id: 2,
-    name: "Casual Premium",
+    name: "Street Flow",
     price: "",
-    category: "OGOCHI / Armani",
-    image: "https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1974&auto=format&fit=crop",
+    category: "Atitude",
+    image: "/images/gallery-2.jpg",
   },
   {
     id: 3,
-    name: "Urban Performance",
+    name: "Textura & Cor",
     price: "",
-    category: "Dri Fit / Jogger",
-    image: "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=1995&auto=format&fit=crop",
+    category: "Tendência",
+    image: "/images/gallery-3.jpg",
   },
   {
     id: 4,
-    name: "Summer Vibes",
+    name: "Casual Smart",
     price: "",
-    category: "Sarja & Prints",
-    image: "https://images.unsplash.com/photo-1583336663277-620dc1996580?q=80&w=2069&auto=format&fit=crop",
+    category: "Versatilidade",
+    image: "/images/gallery-4.jpg",
   }
+];
+
+export const SHOWCASE_ITEMS = [
+    { id: 1, image: "/images/showcase-polo.jpg", title: "Polos OGOCHI" }, 
+    { id: 2, image: "/images/showcase-jeans.jpg", title: "Jeans Premium" }, 
+    { id: 3, image: "/images/showcase-shoes.jpg", title: "Sandálias Confort" }, 
+    { id: 4, image: "/images/showcase-shorts.jpg", title: "Bermudas Cargo" }, 
+    { id: 5, image: "/images/showcase-shirt.jpg", title: "Camisaria" }, 
+    { id: 6, image: "/images/showcase-chino.jpg", title: "Sarja Alfaiataria" }, 
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

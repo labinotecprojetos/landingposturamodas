@@ -6,14 +6,18 @@ import { WHATSAPP_LINK } from '../constants';
 const Hero: React.FC = () => {
   return (
     <div id="hero" className="relative h-screen w-full overflow-hidden flex flex-col justify-center items-center text-center">
-      {/* Background Image - Lifestyle / Urban / Casual */}
+      {/* Background Image - Local File */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?q=80&w=1974&auto=format&fit=crop"
-          alt="Homem com estilo casual e liberdade"
-          className="w-full h-full object-cover opacity-70"
+          src="/images/hero-bg.jpg"
+          alt="Homem com estilo casual e óculos na Postura Modas"
+          className="w-full h-full object-cover object-top opacity-80"
+          onError={(e) => {
+            // Fallback if local image is missing
+            e.currentTarget.src = "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=2070&auto=format&fit=crop";
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90"></div>
       </div>
 
       {/* Content */}
@@ -23,14 +27,14 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-          <p className="text-brand-gold text-xs md:text-sm font-bold tracking-[0.3em] uppercase mb-6 bg-black/20 backdrop-blur-sm inline-block px-4 py-2 rounded-sm border border-brand-gold/30">
+          <p className="text-brand-gold text-xs md:text-sm font-bold tracking-[0.3em] uppercase mb-6 bg-black/40 backdrop-blur-sm inline-block px-4 py-2 rounded-sm border border-brand-gold/30">
             Entre Rios - Bahia
           </p>
           <h1 className="text-5xl md:text-8xl font-serif font-bold text-white mb-6 tracking-tight leading-none drop-shadow-2xl">
             A LOJA QUE<br/>TE VESTE.
           </h1>
           
-          <p className="text-gray-200 text-lg md:text-2xl font-light max-w-2xl mx-auto leading-relaxed mb-10 drop-shadow-lg">
+          <p className="text-gray-200 text-lg md:text-2xl font-light max-w-2xl mx-auto leading-relaxed mb-10 drop-shadow-lg text-shadow-sm">
             Postura não é só roupa social. É atitude.<br/>
             Liberte seu estilo com as melhores marcas.
           </p>
